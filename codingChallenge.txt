@@ -1,0 +1,4 @@
+1.- declare function 'Question'
+properties: question, answers, correct
+
+-define variable q1, q2, q3
