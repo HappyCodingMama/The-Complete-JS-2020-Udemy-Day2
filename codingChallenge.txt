@@ -2,3 +2,6 @@
 properties: question, answers, correct
 
 -define variable q1, q2, q3
+-define variable 'questions' : question, choice array , answer number
+
+-define variable questions using array
