@@ -7,3 +7,51 @@ properties: question, answers, correct
 -define variable 'questions' using array
 
 - define variable 'n' random number make to change integer as much as question number
+
+-declare anonymous function of 'displayQuestion' to show 'Question' using prototype : 
+ print 'question' to the console
+ use for loop syntax -> as much as answers.length
+                     -> print 'i + ': ' + answers[i]' to the console
+  
+-call method: questions[n] to displayQuestion 
+
+-declare function 'ans' which is the same as 'checkAnswer' in 'Question' using prototype :
+if 'ans' is the same 'correct', print to the console
+'correct answer!'
+otherwise 'Wrong answer. Try again.'
+
+-define answer : popup prompt 'Please select the correct answer.' then, use parseInt 
+
+-call method : questions[n] to checkAnswer(answer)
+
+-use (function() { })(); to make sure that all your code is private
+
+---------------------------------------------
+
+[expert level]
+1. put variable questions into function 'nextQuestion' and
+call it right after that
+ - take defining variable questions out of the function
+ - add at variable 'answer', if answer is not 'exit', then execute questions[n]checkAnswer(answer)
+ - call nextQeustion for continuing
+ - parseInt change its position from promt to (answer) of checkAnswer
+
+
+ 2.declare function 'score'
+  - add variable 'sc' is the same as 0
+  - return function, property-> correct
+  if correct 'sc' increase, otherwise return sc
+
+  3.add variable 'keepScore' is the same as function score
+    - add 'keepScore' 'checkAnswer's properties of variable 'answer' 
+    
+  4. add 'callBack' function properties of question.prototype.checkAnswer and call callBack(true) next IF syntax.
+    - add variable 'sc' above IF syntax
+    - fix 'sc' is the same as callBack(true) in IF syntax,
+      add 'sc' is the same as callBack(false) in ELSE syntax
+
+  5. display score at Question using prototype
+  -declare function, property is score : print "'Your current score is:' + score" to the console
+
+
+6. call displayScore at Question.prototype.checkAnswer , property is sc
