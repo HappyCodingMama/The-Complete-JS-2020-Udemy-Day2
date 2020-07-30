@@ -1,7 +1,9 @@
 1.- declare function 'Question'
 properties: question, answers, correct
 
--define variable q1, q2, q3
+-define variable 'q1', 'q2', 'q3'
 -define variable 'questions' : question, choice array , answer number
 
--define variable questions using array
+-define variable 'questions' using array
+
+- define variable 'n' random number make to change integer as much as question number

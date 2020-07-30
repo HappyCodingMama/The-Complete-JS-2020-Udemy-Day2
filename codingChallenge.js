@@ -33,5 +33,7 @@ var q2 = new Question('What is the name of this course\'s teacher?', ['John', 'M
 
 var q3 = new Question('What does best describe coding?', ['Boring', 'Hard', 'Fun', 'Tedius'], 2);
 
-var question = [q1, q2, q3];
+var questions = [q1, q2, q3];
+
+var n = Math.floor(Math.ramdom() * questions.length);
 
